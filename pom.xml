@@ -27,6 +27,11 @@
             <organizationUrl>https://github.com/ShaftHQ</organizationUrl>
         </developer>
     </developers>
+    <scm>
+        <connection>scm:git:https://github.com/ShaftHQ/SHAFT_DSL.git</connection>
+        <developerConnection>scm:git:ssh://github.com/ShaftHQ/SHAFT_DSL.git</developerConnection>
+        <url>https://github.com/ShaftHQ/SHAFT_DSL</url>
+    </scm>
     <properties>
         <!-- Make sure you point to the latest release version: https://github.com/ShaftHQ/SHAFT_ENGINE/releases -->
         <shaft_engine.version>7.3.20230901</shaft_engine.version>
