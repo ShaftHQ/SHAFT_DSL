@@ -1,11 +1,10 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import com.shaft.gui.element.ElementActions;
 import com.shaft.validation.Validations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-@SuppressWarnings("unused")
 public abstract class Element {
     static WebDriver driver;
     final By locator;
@@ -13,7 +12,7 @@ public abstract class Element {
 
     protected Element(By locator) {
         this.locator = locator;
-        elementActions = ElementActions.getInstance();
+        elementActions = new ElementActions(driver);
     }
 
     public static WebDriver getDriver() {
@@ -24,8 +23,16 @@ public abstract class Element {
         Element.driver = driver;
     }
 
+    public void click() {
+        elementActions.click(locator);
+    }
+
+    public void hover() {
+        elementActions.hover(locator);
+    }
+
     public boolean isDisplayed() {
-        return new ElementActions().isElementDisplayed(locator);
+        return elementActions.isElementDisplayed( locator);
     }
 
     public void shouldBeDisplayed() {
@@ -33,20 +40,20 @@ public abstract class Element {
     }
 
     public void shouldExist() {
-        Validations.assertThat().element(locator).exists().perform();
+        Validations.assertThat().element(driver, locator).exists().perform();
     }
 
     public void shouldExist(String reportMsg) {
-        Validations.assertThat().element(locator).exists()
+        Validations.assertThat().element(driver, locator).exists()
                 .withCustomReportMessage(reportMsg).perform();
     }
 
     public void shouldNotExist() {
-        Validations.assertThat().element(locator).exists().perform();
+        Validations.assertThat().element(driver, locator).doesNotExist().perform();
     }
 
     public void shouldNotExist(String reportMsg) {
-        Validations.assertThat().element(locator).exists()
+        Validations.assertThat().element(driver, locator).doesNotExist()
                 .withCustomReportMessage(reportMsg).perform();
     }
 }

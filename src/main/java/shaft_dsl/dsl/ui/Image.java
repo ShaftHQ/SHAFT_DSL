@@ -1,8 +1,7 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import org.openqa.selenium.By;
 
-@SuppressWarnings("unused")
 public class Image extends Element {
     public Image(By locator) {
         super(locator);
