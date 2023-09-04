@@ -6,7 +6,7 @@
 
     <groupId>io.github.shafthq</groupId>
     <artifactId>SHAFT_DSL</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>SHAFT DSL is a SHAFT Ecosystem project that extends basic SHAFT_Engine functionality and provides the user with
         easy-access domain specific elements. This facilitated authoring tests even more and provides a unique user experience that is tailored to testers everywhere.
@@ -21,7 +21,13 @@
     </licenses>
     <developers>
         <developer>
-            <name>Mohammed ElGazzar</name>
+            <name>Mohamed ElGazzar</name>
+            <email>Mhmd.ElGazzar.sqe@gmail.com</email>
+            <organization>GitHub</organization>
+            <organizationUrl>https://github.com/ShaftHQ</organizationUrl>
+        </developer>
+        <developer>
+            <name>Mohab Mohie</name>
             <email>Mohab.MohieElDeen@outlook.com</email>
             <organization>GitHub</organization>
             <organizationUrl>https://github.com/ShaftHQ</organizationUrl>
