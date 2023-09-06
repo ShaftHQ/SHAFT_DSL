@@ -1,19 +1,14 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import com.shaft.validation.Validations;
 import org.openqa.selenium.By;
 
-@SuppressWarnings("unused")
 public class Button extends Label {
 
     public static final String DISABLED = "disabled";
 
     public Button(By locator) {
         super(locator);
-    }
-
-    public void click() {
-        elementActions.click(locator);
     }
 
     public Boolean isEnabled() {

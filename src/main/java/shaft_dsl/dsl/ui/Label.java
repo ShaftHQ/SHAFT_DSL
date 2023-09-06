@@ -1,10 +1,8 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import com.shaft.validation.Validations;
 import org.openqa.selenium.By;
 
-
-@SuppressWarnings("unused")
 public class Label extends Element {
 
     public Label(By locator) {
@@ -15,8 +13,8 @@ public class Label extends Element {
         return elementActions.getText(locator);
     }
 
-    public void waitForTextToChange(String initialValve) {
-        elementActions.waitForTextToChange(locator, initialValve);
+    public void waitForTextToChange(String initialValve, int numberOfRetries) {
+        elementActions.waitForTextToChange(locator, initialValve );
     }
 
     public void shouldHaveText(String expectedValue) {
