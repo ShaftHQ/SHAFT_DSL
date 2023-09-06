@@ -1,10 +1,9 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import com.shaft.validation.Validations;
 import org.openqa.selenium.By;
 
-@SuppressWarnings("unused")
-public class TextBox extends Element {
+public class TextBox extends Button {
 
     public TextBox(By locator) {
         super(locator);

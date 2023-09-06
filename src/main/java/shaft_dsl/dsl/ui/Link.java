@@ -1,13 +1,11 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import org.openqa.selenium.By;
 
-@SuppressWarnings("unused")
 public class Link extends Label {
     public Link(By locator) {
         super(locator);
     }
-
     public void click() {
         elementActions.click(locator);
     }

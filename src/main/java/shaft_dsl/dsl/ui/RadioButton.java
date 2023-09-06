@@ -1,10 +1,8 @@
-package com.shaft.dsl.gui;
+package shaft_dsl.dsl.ui;
 
 import com.shaft.validation.Validations;
 import org.openqa.selenium.By;
 
-
-@SuppressWarnings("unused")
 public class RadioButton extends Button {
     public static final String SELECTED = "selected";
     final By selectedLocator;
@@ -16,12 +14,6 @@ public class RadioButton extends Button {
 
     public void select() {
         if (!(isSelected())) {
-            click();
-        }
-    }
-
-    public void unselect() {
-        if ((isSelected())) {
             click();
         }
     }
