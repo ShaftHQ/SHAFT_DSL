@@ -1,14 +1,15 @@
 package testPackage;
 
 import com.shaft.driver.SHAFT;
-import com.shaft.dsl.gui.Button;
-import com.shaft.dsl.gui.CheckBox;
-import com.shaft.dsl.gui.Element;
-import com.shaft.dsl.gui.Label;
+
+import core.dsl.ui.Button;
+import core.dsl.ui.CheckBox;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import core.dsl.ui.Element;
+import core.dsl.ui.Label;
 
 public class DslTests {
     SHAFT.GUI.WebDriver driver;
