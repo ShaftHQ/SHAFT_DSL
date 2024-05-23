@@ -38,7 +38,7 @@ jobs:
           allowUpdates: false
           generateReleaseNotes: true
           name: ${{ env.RELEASE_VERSION }}
-          tag: ${{ env.RELEASE_VERSION }}+"release"
+          tag: ${{ env.RELEASE_VERSION }}
       - name: Setup Prerequisites
         run: |
           git config --global user.signingKey ${{ secrets.GPG_KEYNAME }}
