@@ -42,13 +42,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Firefox_Grid_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Firefox_Grid_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -82,13 +82,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Chrome_Grid_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Chrome_Grid_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -122,13 +122,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Edge_Grid_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Ubuntu_Edge_Grid_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -158,13 +158,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows_Edge_Local_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows_Edge_Local_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -194,13 +194,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows_Chrome_Local_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Windows_Chrome_Local_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -230,13 +230,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: MacOSX_Safari_Local_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: MacOSX_Safari_Local_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
@@ -268,13 +268,13 @@ jobs:
           verbose: true
       - name: Upload Allure Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: MacOSX_Chrome_Local_Allure
           path: "generatedReport_*.zip"
       - name: Upload Execution Summary Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: MacOSX_Chrome_Local_Summary
           path: "execution-summary/ExecutionSummaryReport_*.html"
