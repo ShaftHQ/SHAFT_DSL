@@ -6,7 +6,7 @@
 
     <groupId>io.github.shafthq</groupId>
     <artifactId>SHAFT_DSL</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>SHAFT DSL is a SHAFT Ecosystem project that extends basic SHAFT_Engine functionality and provides the user with
         easy-access domain specific elements. This facilitated authoring tests even more and provides a unique user experience that is tailored to testers everywhere.
@@ -41,7 +41,7 @@
     <properties>
         <!-- Make sure you point to the latest release version: https://github.com/ShaftHQ/SHAFT_ENGINE/releases -->
         <shaft_engine.version>8.2.20240411</shaft_engine.version>
-        <aspectjweaver.version>1.9.20.1</aspectjweaver.version>
+        <aspectjweaver.version>1.9.22.1</aspectjweaver.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-surefire-plugin.version>3.4.0</maven-surefire-plugin.version>
