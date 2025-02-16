@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.shafthq</groupId>
     <artifactId>SHAFT_DSL</artifactId>
-    <version>1.0.10</version>
+    <version>1.0.12</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>SHAFT DSL is a SHAFT Ecosystem project that extends basic SHAFT_Engine functionality and provides the user with
         easy-access domain specific elements. This facilitated authoring tests even more and provides a unique user experience that is tailored to testers everywhere.
