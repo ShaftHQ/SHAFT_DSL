@@ -154,7 +154,7 @@
                 <artifactId>maven-scm-publish-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <checkoutDirectory>${project.basedir}/../SHAFT_ENGINE_apidocs</checkoutDirectory>
+                    <checkoutDirectory>${project.basedir}/../SHAFT_DSL_apidocs</checkoutDirectory>
                     <tryUpdate>true</tryUpdate>
                     <siteOutputEncoding>UTF-8</siteOutputEncoding>
                     <checkinComment>Publishing javadoc for ${project.artifactId}:${project.version}</checkinComment>
@@ -184,7 +184,7 @@
                         </manifest>
                     </archive>
                     <includes>
-                        <include>com/**</include>
+                        <include>core/**</include>
                     </includes>
                 </configuration>
             </plugin>
